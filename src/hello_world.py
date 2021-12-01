@@ -2,7 +2,7 @@
 """
 
 
-def say_hello():
+def say_hello() -> str:
     """This function return a string containing "Hello world!".
 
     Returns:
