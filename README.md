@@ -12,6 +12,7 @@ This is a template containing all the essentials you need when creating a new re
 
 
 ## Getting started
+
 1. Install [poetry](https://python-poetry.org/docs/)
 1. Clone repository
 1. Run `poetry config virtualenvs.in-project true` followed by `poetry install` from the project root folder. A .venv folder should now be created and placed in the root of the project. 
@@ -19,15 +20,20 @@ This is a template containing all the essentials you need when creating a new re
 1. Install pre-commit hook by running `poetry run pre-commit install`
 
 ## How to build the docs
+Build `.rst` files
 
 ```
 poetry run sphinx-apidoc -o docs/source src
 ```
 
-``poetry run sphinx-build -b html docs/source docs/build``
+Build HTML files from `.rst` files
+
+```
+poetry run sphinx-build -b html docs/source docs/build
+```
 
 The docs can now be accessed under docs/build. 
 
-### Run tests
+## Run tests
 
 `poetry run python -m pytest`
