@@ -23,13 +23,13 @@ repos:
         types: [python]
         exclude: setup.py
 
-      # - id: mypy
-      #   name: mypy
-      #   stages: [commit]
-      #   language: system
-      #   entry: poetry run mypy . --disallow-untyped-defs
-      #   types: [python]
-      #   pass_filenames: false
+      - id: mypy
+        name: mypy
+        stages: [commit]
+        language: system
+        entry: poetry run mypy . --disallow-untyped-defs
+        types: [python]
+        pass_filenames: false
 
 #      - id: pydocstyle
 #        name: pydocstyle
