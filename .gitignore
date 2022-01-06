@@ -1,5 +1,8 @@
 docs/source/
 .DS_store
+flask_session/
+cache.gz
+.vscode/
 
 
 # Byte-compiled / optimized / DLL files
